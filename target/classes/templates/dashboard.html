@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="dashboard-shell">
+    <header class="dashboard-header">
+        <div>
+            <p class="eyebrow">Área protegida</p>
+            <h1 th:text="'Bienvenido, ' + ${principalName}">Bienvenido</h1>
+            <p class="subtitle">Acceso autorizado con rol <strong th:text="${roleLabel}">ROLE</strong>.</p>
+        </div>
+        <form th:action="@{/logout}" method="post">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+            <button type="submit" class="secondary-btn">Cerrar sesión</button>
+        </form>
+    </header>
+
+    <section class="dashboard-grid">
+        <article class="dashboard-card accent">
+            <h2>Autenticación</h2>
+            <p>Login basado en formulario con `UserDetailsService`, persistencia MySQL y contraseñas cifradas con BCrypt.</p>
+        </article>
+        <article class="dashboard-card">
+            <h2>Autorización</h2>
+            <p>Las rutas `/admin/**` requieren ADMIN y `/user/**` aceptan USER y ADMIN.</p>
+        </article>
+        <article class="dashboard-card">
+            <h2>Registro</h2>
+            <p>Los usuarios nuevos se registran con el rol USER y credenciales validadas en servidor.</p>
+        </article>
+    </section>
+    <section th:if="${roleLabel} == 'ADMIN'" class="admin-section">
+        <h2>Usuarios registrados</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Nombre completo</th>
+                <th>Email</th>
+                <th>Roles</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="u : ${users}">
+                <td th:text="${u.id}">1</td>
+                <td th:text="${u.username}">usuario</td>
+                <td th:text="${u.fullName}">Nombre</td>
+                <td th:text="${u.email}">email</td>
+                <td>
+                    <span th:each="r : ${u.roles}" th:text="${r.name}">ROLE</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+</body>
+</html>

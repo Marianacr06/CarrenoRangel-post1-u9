@@ -1,0 +1,12 @@
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/AuthDemoApplication.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/config/DataInitializer.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/controller/AuthController.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/controller/DashboardController.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/entity/AppUser.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/entity/Role.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/entity/RoleName.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/repository/AppUserRepository.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/repository/RoleRepository.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/security/SecurityConfig.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/service/CustomUserDetailsService.java
+/Users/marianacarrenorangel/Documents/VisualStudioCode/CarreñoRangel-post1-U9/src/main/java/com/carrenorangel/authdemo/service/UserService.java

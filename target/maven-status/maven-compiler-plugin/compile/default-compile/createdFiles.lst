@@ -1,0 +1,14 @@
+com/carrenorangel/authdemo/controller/DashboardController.class
+com/carrenorangel/authdemo/entity/Role.class
+com/carrenorangel/authdemo/security/SecurityConfig$1.class
+com/carrenorangel/authdemo/service/CustomUserDetailsService.class
+com/carrenorangel/authdemo/repository/RoleRepository.class
+com/carrenorangel/authdemo/security/SecurityConfig.class
+com/carrenorangel/authdemo/AuthDemoApplication.class
+com/carrenorangel/authdemo/controller/AuthController.class
+com/carrenorangel/authdemo/service/UserService.class
+com/carrenorangel/authdemo/config/DataInitializer.class
+com/carrenorangel/authdemo/controller/AuthController$RegistrationForm.class
+com/carrenorangel/authdemo/repository/AppUserRepository.class
+com/carrenorangel/authdemo/entity/AppUser.class
+com/carrenorangel/authdemo/entity/RoleName.class
